@@ -5,10 +5,10 @@ def index(request):
     return HttpResponse('Главная страница')
 
 
-def icecream_list(request):
+def ice_cream_list(request):
     return HttpResponse('Список мороженого')
 
 
 # В урл мы ждем парметр, и нужно его прередать в функцию для использования
-def icecream_detail(icecream_detail, pk):
+def ice_cream_detail(icecream_detail, pk):
     return HttpResponse(f'Мороженое номер {pk}')

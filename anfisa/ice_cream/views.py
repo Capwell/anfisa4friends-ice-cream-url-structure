@@ -10,5 +10,5 @@ def ice_cream_list(request):
 
 
 # В урл мы ждем парметр, и нужно его прередать в функцию для использования
-def ice_cream_detail(icecream_detail, pk):
+def ice_cream_detail(request, pk):
     return HttpResponse(f'Мороженое номер {pk}')

@@ -19,6 +19,6 @@ from django.urls import include, path
 
 urlpatterns = [    
     # Сначала проверяем все пути, которые есть в приложении ice_cream
-    path('', include('ice_cream.urls', namespace='ice_cream')),
+    path('', include('ice_cream.urls')),
     path('admin/', admin.site.urls),
 ]
